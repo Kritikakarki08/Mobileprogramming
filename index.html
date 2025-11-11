@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        Kritika karki
+    </head>
+    <body>
+
+
+    <div class="group1" style="background-color: #ff9999; padding:100px; margin-bottom:50px;">LALIGA
+        <div class="club1" style="background-color: #003399; color:white; padding:50px;">Barcelona</div>
+        <div class="club2" style="background-color: #ffffff; color:black; padding:50px;">Real Madrid</div>
+    </div>
+
+
+    <div class="group2" style="background-color: #99ccff; padding:80px; margin-bottom:40px;">PREMIER LEAGUE
+        <div class="club1" style="background-color: #da291c; color:white; padding:20px;">Man United</div>
+        <div class="club2" style="background-color: #6cabdd; color:white; padding:30px;">Man City</div>
+    </div>
+
+  
+    <div class="group3" style="background-color: #99ff99; padding:70px; margin-bottom:50px;">SERIE A
+        <div class="club1" style="background-color: #0047ab; color:white; padding:25px;">Inter Milan</div>
+        <div class="club2" style="background-color: #ff0000; color:white; padding:25px;">AC Milan</div>
+    </div>
+
+
+    <div class="group4" style="background-color: #ffcc99; padding:110px; margin-bottom:110px;">
+        <div class="club1" style="background-color: #003366; color:white; padding:70px;">Paris Saint Germain</div>
+        <div class="club2" style="background-color: #ff6600; color:white; padding:35px;">Lyon</div>
+    </div>
+
+    </body>
+</html>
+<script>
+        let toggleImage = false;
+
+        function changeDivColor(id) {
+            const colors = ['#FFD700', '#FF69B4', '#00FA9A', '#1E90FF', '#FF4500'];
+            const random = colors[Math.floor(Math.random() * colors.length)];
+            document.getElementById(id).style.backgroundColor = random;
+        }
+
+        function showMessage(id) {
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        function toggleMessage(id, btnId) {
+            const msg = document.getElementById(id);
+            const btn = document.getElementById(btnId);
+            if (msg.classList.contains('hidden')) {
+                msg.classList.remove('hidden');
+                btn.textContent = "Hide Message";
+            } else {
+                msg.classList.add('hidden');
+                btn.textContent = "Show Message";
+            }
+        }
+function changeImage(id) {
+    const img = document.getElementById(id);
+    if (toggleImage) {
+        img.src = "C:\\Users\\seezee\\Downloads\\Happy.jpg";
+    } else {
+        img.src = "C:\\Users\\seezee\\Downloads\\Harry styles.jpg";
+    }
+    toggleImage = !toggleImage;
+}
+
+function changeBackground() {
+    const colors = ['#fffacd', '#d1f7ff', '#f0fff0', '#f5f5dc', '#ffefd5'];
+    document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+}
+</script>
+
+    </body>
+   </html>
+   
