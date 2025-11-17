@@ -43,8 +43,8 @@ $(document).ready(function () {
     });
 
     // ---------- Image animation (runs once per click) ----------
-    const imgA = "C:\\Users\\nepal\\OneDrive\\Desktop\\New folder (2)\\wp2372393.jpg";
-    const imgB = "C:\\Users\\nepal\\OneDrive\\Desktop\\New folder (2)\\download.jpg";
+    const imgA = "/Users/kritikakarki/Desktop/Screenshot 2025-11-17 at 12.16.45.png";
+    const imgB = "/Users/kritikakarki/Desktop/Screenshot 2025-11-17 at 12.16.37.png";
 
     let toggleImage = false; // which image will be used next
     let animating = false;   // prevents double-starts
