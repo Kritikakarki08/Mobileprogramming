@@ -1,4 +1,4 @@
-// roshanweek3.js
+
 $(document).ready(function () {
 
     // ---------- Menu: hamburger + responsive fix ----------
